@@ -1,0 +1,5 @@
+com/microservico/mini_projeto_rabbitmq_spring_boot/MiniProjetoRabbitmqSpringBootApplication.class
+com/microservico/mini_projeto_rabbitmq_spring_boot/service/RabbitMQService.class
+com/microservico/mini_projeto_rabbitmq_spring_boot/controller/EstoqueController.class
+com/microservico/mini_projeto_rabbitmq_spring_boot/controller/PrecoController.class
+com/microservico/mini_projeto_rabbitmq_spring_boot/conections/RabbitMQConection.class

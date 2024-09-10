@@ -1,0 +1,4 @@
+com/microservico/constants/RabbitMQConstants.class
+com/microservico/App.class
+com/microservico/dto/PrecoDTO.class
+com/microservico/dto/EstoqueDTO.class
