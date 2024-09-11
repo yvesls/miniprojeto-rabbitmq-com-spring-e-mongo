@@ -1,0 +1,14 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Spring Boot-MiniProjetoRabbitmqSpringBootApplication<mini-projeto-rabbitmq-spring-boot>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "mainClass": "com.microservico.mini_projeto_rabbitmq_spring_boot.MiniProjetoRabbitmqSpringBootApplication",
+            "projectName": "mini-projeto-rabbitmq-spring-boot",
+            "args": "",
+            "envFile": "${workspaceFolder}/.env"
+        }
+    ]
+}

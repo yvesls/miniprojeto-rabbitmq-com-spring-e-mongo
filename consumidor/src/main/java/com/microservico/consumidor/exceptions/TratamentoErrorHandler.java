@@ -7,20 +7,16 @@ import org.springframework.util.ErrorHandler;
 public class TratamentoErrorHandler implements ErrorHandler {
 
     @Override
-    public void handleError(Throwable t) {
-        String nomeDaFila = ((ListenerExecutionFailedException) t).getFailedMessage().getMessageProperties()
+    public void handleError( Throwable t ) {
+        String nomeDaFila = ( ( ListenerExecutionFailedException ) t ).getFailedMessage().getMessageProperties()
                 .getConsumerQueue();
-        System.out.println(nomeDaFila);
+        System.out.println( nomeDaFila );
 
-        String mensagem = new String(((ListenerExecutionFailedException) t).getFailedMessage().getBody());
-        System.out.println(mensagem);
+        String mensagem = new String( ( ( ListenerExecutionFailedException ) t ).getFailedMessage().getBody() );
+        System.out.println( mensagem );
 
-        System.out.println(t.getCause().getMessage());
+        System.out.println( t.getCause().getMessage() );
 
-        // Logar no ElasticSearch
-        // Logar no Cloud Watch(AWS)
-        // ....
-
-        throw new AmqpRejectAndDontRequeueException("Não deve retornar a fila");
+        throw new AmqpRejectAndDontRequeueException( "Não deve retornar a fila" );
     }
 }

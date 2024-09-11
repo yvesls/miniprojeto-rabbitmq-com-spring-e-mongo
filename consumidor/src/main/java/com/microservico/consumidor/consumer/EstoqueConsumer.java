@@ -10,7 +10,7 @@ public class EstoqueConsumer {
 
     @RabbitListener( queues = RabbitMQConstants.FILA_ESTOQUE )
     private void consumidor( EstoqueDTO estoqueDTO ) {
-        System.out.println( estoqueDTO.codigoproduto );
-        System.out.println( estoqueDTO.quantidade );
+        System.out.println( estoqueDTO.getCodigoproduto() );
+        System.out.println( estoqueDTO.getQuantidade() );
     }
 }

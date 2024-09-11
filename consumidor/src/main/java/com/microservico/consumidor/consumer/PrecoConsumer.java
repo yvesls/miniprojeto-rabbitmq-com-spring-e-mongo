@@ -10,7 +10,7 @@ public class PrecoConsumer {
 
     @RabbitListener( queues = RabbitMQConstants.FILA_PRECO )
     private void consumidor( PrecoDTO precoDTO ) {
-        System.out.println( precoDTO.codigoproduto );
-        System.out.println( precoDTO.preco );
+        System.out.println( precoDTO.getPreco() );
+        System.out.println( precoDTO.getCodigoproduto() );
     }
 }
