@@ -5,21 +5,29 @@ import java.io.Serializable;
 public class PrecoDTO implements Serializable {
 
     private String codigoproduto;
-    private double preco;
+    private double valor;
+
+    public PrecoDTO() {
+    }
+
+    public PrecoDTO(String codigoproduto, double valor) {
+        this.codigoproduto = codigoproduto;
+        this.valor = valor;
+    }
 
     public String getCodigoproduto() {
         return codigoproduto;
     }
 
-    public void setCodigoproduto( String codigoproduto ) {
+    public void setCodigoproduto(String codigoproduto) {
         this.codigoproduto = codigoproduto;
     }
 
-    public double getPreco() {
-        return preco;
+    public double getValor() {
+        return valor;
     }
 
-    public void setPreco( double preco ) {
-        this.preco = preco;
+    public void setValor(double valor) {
+        this.valor = valor;
     }
 }

@@ -3,12 +3,12 @@ package com.microservico.mini_projeto_rabbitmq_spring_boot.conections;
 import org.springframework.amqp.core.AmqpAdmin;
 import org.springframework.amqp.core.Binding;
 import org.springframework.amqp.core.DirectExchange;
+import org.springframework.amqp.core.Queue;
 import org.springframework.stereotype.Component;
 
 import com.microservico.constants.RabbitMQConstants;
-import jakarta.annotation.PostConstruct;
 
-import org.springframework.amqp.core.Queue;
+import jakarta.annotation.PostConstruct;
 
 @Component
 public class RabbitMQConection {

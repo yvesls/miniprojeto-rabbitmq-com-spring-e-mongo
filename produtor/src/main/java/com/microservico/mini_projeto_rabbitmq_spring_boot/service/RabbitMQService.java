@@ -14,8 +14,8 @@ public class RabbitMQService {
     @Autowired
     private Jackson2JsonMessageConverter jsonMessageConverter;
 
-    public void enviaMensagem( String nomeFila, Object mensagem ) {
-        rabbitTemplate.setMessageConverter( jsonMessageConverter );
-        rabbitTemplate.convertAndSend( nomeFila, mensagem );
+    public void enviaMensagem(String nomeFila, Object mensagem) {
+        rabbitTemplate.setMessageConverter(jsonMessageConverter);
+        rabbitTemplate.convertAndSend(nomeFila, mensagem);
     }
 }
